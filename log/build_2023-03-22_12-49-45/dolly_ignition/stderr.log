@@ -1,0 +1,10 @@
+[33mCMake Warning at CMakeLists.txt:16 (message):
+  Ignition Gazebo 5 or 6 not found, proceeding without that simulator.
+
+[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    AMENT_CMAKE_SYMLINK_INSTALL
+
+[0m

@@ -1,0 +1,29 @@
+[0.014s] Invoking command in '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests': AMENT_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble /usr/bin/cmake /home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_tests
+[0.105s] -- The C compiler identification is GNU 11.3.0
+[0.173s] -- The CXX compiler identification is GNU 11.3.0
+[0.181s] -- Detecting C compiler ABI info
+[0.260s] -- Detecting C compiler ABI info - done
+[0.272s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.272s] -- Detecting C compile features
+[0.272s] -- Detecting C compile features - done
+[0.273s] -- Detecting CXX compiler ABI info
+[0.371s] -- Detecting CXX compiler ABI info - done
+[0.381s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.383s] -- Detecting CXX compile features
+[0.385s] -- Detecting CXX compile features - done
+[0.401s] [33mCMake Warning at CMakeLists.txt:18 (message):
+[0.401s]   Ignition Gazebo 5 or 6 not found, proceeding without that simulator.
+[0.401s] 
+[0.402s] [0m
+[0.402s] -- Configuring done
+[0.403s] -- Generating done
+[0.404s] [33mCMake Warning:
+[0.404s]   Manually-specified variables were not used by the project:
+[0.404s] 
+[0.404s]     AMENT_CMAKE_SYMLINK_INSTALL
+[0.404s] 
+[0.405s] [0m
+[0.405s] -- Build files have been written to: /home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests
+[0.410s] Invoked command in '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests' returned '0': AMENT_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble /usr/bin/cmake /home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_tests
+[0.410s] Invoking command in '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests': AMENT_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble /usr/bin/cmake --build /home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests -- -j2 -l2
+[0.451s] Invoked command in '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests' returned '0': AMENT_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble /usr/bin/cmake --build /home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests -- -j2 -l2

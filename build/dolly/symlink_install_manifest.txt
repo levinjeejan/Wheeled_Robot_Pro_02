@@ -1,0 +1,15 @@
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/ament_prefix_path.sh
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/ament_prefix_path.dsv
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/path.sh
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/path.dsv
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.bash
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.sh
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.zsh
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.dsv
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/package.dsv
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/ament_index/resource_index/packages/dolly
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/cmake/dollyConfig.cmake
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/cmake/dollyConfig-version.cmake
+/home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/package.xml

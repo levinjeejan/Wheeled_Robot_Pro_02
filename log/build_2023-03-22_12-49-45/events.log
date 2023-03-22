@@ -1,0 +1,694 @@
+[0.000000] (-) TimerEvent: {}
+[0.000530] (dolly_follow) JobQueued: {'identifier': 'dolly_follow', 'dependencies': OrderedDict()}
+[0.000578] (dolly_gazebo) JobQueued: {'identifier': 'dolly_gazebo', 'dependencies': OrderedDict([('dolly_follow', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow')])}
+[0.000611] (dolly_ignition) JobQueued: {'identifier': 'dolly_ignition', 'dependencies': OrderedDict([('dolly_follow', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow')])}
+[0.000637] (dolly_tests) JobQueued: {'identifier': 'dolly_tests', 'dependencies': OrderedDict([('dolly_follow', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow'), ('dolly_ignition', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_ignition')])}
+[0.000663] (dolly) JobQueued: {'identifier': 'dolly', 'dependencies': OrderedDict([('dolly_follow', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow'), ('dolly_gazebo', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo'), ('dolly_ignition', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_ignition'), ('dolly_tests', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_tests')])}
+[0.001348] (dolly_follow) JobStarted: {'identifier': 'dolly_follow'}
+[0.077206] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'cmake'}
+[0.077383] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '/home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly_follow', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.110263] (-) TimerEvent: {}
+[0.210588] (-) TimerEvent: {}
+[0.310951] (-) TimerEvent: {}
+[0.411536] (-) TimerEvent: {}
+[0.512287] (-) TimerEvent: {}
+[0.612896] (-) TimerEvent: {}
+[0.713323] (-) TimerEvent: {}
+[0.813664] (-) TimerEvent: {}
+[0.914049] (-) TimerEvent: {}
+[1.014654] (-) TimerEvent: {}
+[1.115332] (-) TimerEvent: {}
+[1.215933] (-) TimerEvent: {}
+[1.316556] (-) TimerEvent: {}
+[1.417039] (-) TimerEvent: {}
+[1.517480] (-) TimerEvent: {}
+[1.589362] (dolly_follow) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[1.617586] (-) TimerEvent: {}
+[1.717940] (-) TimerEvent: {}
+[1.818384] (-) TimerEvent: {}
+[1.918707] (-) TimerEvent: {}
+[1.988518] (dolly_follow) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[2.018815] (-) TimerEvent: {}
+[2.097612] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.118940] (-) TimerEvent: {}
+[2.219229] (-) TimerEvent: {}
+[2.311418] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.319083] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.319649] (-) TimerEvent: {}
+[2.319779] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.335565] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.373410] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.419798] (-) TimerEvent: {}
+[2.498582] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.507005] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.507693] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.508931] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.519959] (-) TimerEvent: {}
+[2.616736] (dolly_follow) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.620059] (-) TimerEvent: {}
+[2.720384] (-) TimerEvent: {}
+[2.821236] (-) TimerEvent: {}
+[2.921789] (-) TimerEvent: {}
+[2.946083] (dolly_follow) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[3.021898] (-) TimerEvent: {}
+[3.063403] (dolly_follow) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.122014] (-) TimerEvent: {}
+[3.195406] (dolly_follow) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.222141] (-) TimerEvent: {}
+[3.322580] (-) TimerEvent: {}
+[3.423170] (-) TimerEvent: {}
+[3.523702] (-) TimerEvent: {}
+[3.539702] (dolly_follow) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.554119] (dolly_follow) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.567231] (dolly_follow) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.623825] (-) TimerEvent: {}
+[3.639972] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.668870] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.723945] (-) TimerEvent: {}
+[3.824307] (-) TimerEvent: {}
+[3.877919] (dolly_follow) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.924423] (-) TimerEvent: {}
+[4.024879] (-) TimerEvent: {}
+[4.073966] (dolly_follow) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.085865] (dolly_follow) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.124999] (-) TimerEvent: {}
+[4.225591] (-) TimerEvent: {}
+[4.326067] (-) TimerEvent: {}
+[4.426458] (-) TimerEvent: {}
+[4.521403] (dolly_follow) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.526527] (-) TimerEvent: {}
+[4.586892] (dolly_follow) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.626648] (-) TimerEvent: {}
+[4.668344] (dolly_follow) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.726779] (-) TimerEvent: {}
+[4.774627] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.826894] (-) TimerEvent: {}
+[4.927263] (-) TimerEvent: {}
+[4.938765] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.939432] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.027385] (-) TimerEvent: {}
+[5.037580] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.038208] (dolly_follow) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.130064] (-) TimerEvent: {}
+[5.230609] (-) TimerEvent: {}
+[5.330940] (-) TimerEvent: {}
+[5.374625] (dolly_follow) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.431054] (-) TimerEvent: {}
+[5.515277] (dolly_follow) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.531170] (-) TimerEvent: {}
+[5.631655] (-) TimerEvent: {}
+[5.721672] (dolly_follow) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.723130] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.723554] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.724175] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.724864] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.724993] (dolly_follow) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.726052] (dolly_follow) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.727297] (dolly_follow) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.727431] (dolly_follow) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.728165] (dolly_follow) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.730215] (dolly_follow) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.731723] (-) TimerEvent: {}
+[5.765229] (dolly_follow) StdoutLine: {'line': b'-- Generating done\n'}
+[5.768056] (dolly_follow) StdoutLine: {'line': b'-- Build files have been written to: /home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow\n'}
+[5.779943] (dolly_follow) CommandEnded: {'returncode': 0}
+[5.781954] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'build'}
+[5.781994] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow', '--', '-j2', '-l2'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.831858] (-) TimerEvent: {}
+[5.832204] (dolly_follow) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dolly_follow.dir/src/dolly_follow.cpp.o\x1b[0m\n'}
+[5.932003] (-) TimerEvent: {}
+[6.032692] (-) TimerEvent: {}
+[6.133088] (-) TimerEvent: {}
+[6.233531] (-) TimerEvent: {}
+[6.334781] (-) TimerEvent: {}
+[6.435383] (-) TimerEvent: {}
+[6.536306] (-) TimerEvent: {}
+[6.637207] (-) TimerEvent: {}
+[6.737844] (-) TimerEvent: {}
+[6.838854] (-) TimerEvent: {}
+[6.939242] (-) TimerEvent: {}
+[7.039543] (-) TimerEvent: {}
+[7.139978] (-) TimerEvent: {}
+[7.240831] (-) TimerEvent: {}
+[7.341232] (-) TimerEvent: {}
+[7.441646] (-) TimerEvent: {}
+[7.542160] (-) TimerEvent: {}
+[7.642500] (-) TimerEvent: {}
+[7.742849] (-) TimerEvent: {}
+[7.843173] (-) TimerEvent: {}
+[7.943644] (-) TimerEvent: {}
+[8.044118] (-) TimerEvent: {}
+[8.144721] (-) TimerEvent: {}
+[8.245130] (-) TimerEvent: {}
+[8.345506] (-) TimerEvent: {}
+[8.445882] (-) TimerEvent: {}
+[8.546259] (-) TimerEvent: {}
+[8.646623] (-) TimerEvent: {}
+[8.746960] (-) TimerEvent: {}
+[8.847328] (-) TimerEvent: {}
+[8.947767] (-) TimerEvent: {}
+[9.048111] (-) TimerEvent: {}
+[9.148556] (-) TimerEvent: {}
+[9.248949] (-) TimerEvent: {}
+[9.349399] (-) TimerEvent: {}
+[9.449880] (-) TimerEvent: {}
+[9.550222] (-) TimerEvent: {}
+[9.650570] (-) TimerEvent: {}
+[9.750894] (-) TimerEvent: {}
+[9.851216] (-) TimerEvent: {}
+[9.951529] (-) TimerEvent: {}
+[10.051874] (-) TimerEvent: {}
+[10.152241] (-) TimerEvent: {}
+[10.252581] (-) TimerEvent: {}
+[10.352927] (-) TimerEvent: {}
+[10.453280] (-) TimerEvent: {}
+[10.553626] (-) TimerEvent: {}
+[10.653981] (-) TimerEvent: {}
+[10.754347] (-) TimerEvent: {}
+[10.854683] (-) TimerEvent: {}
+[10.955035] (-) TimerEvent: {}
+[11.055415] (-) TimerEvent: {}
+[11.155795] (-) TimerEvent: {}
+[11.256141] (-) TimerEvent: {}
+[11.356494] (-) TimerEvent: {}
+[11.456840] (-) TimerEvent: {}
+[11.557187] (-) TimerEvent: {}
+[11.657503] (-) TimerEvent: {}
+[11.757844] (-) TimerEvent: {}
+[11.858188] (-) TimerEvent: {}
+[11.958544] (-) TimerEvent: {}
+[12.058861] (-) TimerEvent: {}
+[12.159188] (-) TimerEvent: {}
+[12.259520] (-) TimerEvent: {}
+[12.360046] (-) TimerEvent: {}
+[12.460368] (-) TimerEvent: {}
+[12.561181] (-) TimerEvent: {}
+[12.661506] (-) TimerEvent: {}
+[12.762283] (-) TimerEvent: {}
+[12.862627] (-) TimerEvent: {}
+[12.963090] (-) TimerEvent: {}
+[13.063428] (-) TimerEvent: {}
+[13.164865] (-) TimerEvent: {}
+[13.265202] (-) TimerEvent: {}
+[13.365524] (-) TimerEvent: {}
+[13.466038] (-) TimerEvent: {}
+[13.567926] (-) TimerEvent: {}
+[13.668370] (-) TimerEvent: {}
+[13.768949] (-) TimerEvent: {}
+[13.869343] (-) TimerEvent: {}
+[13.971188] (-) TimerEvent: {}
+[14.071542] (-) TimerEvent: {}
+[14.172044] (-) TimerEvent: {}
+[14.272873] (-) TimerEvent: {}
+[14.374415] (-) TimerEvent: {}
+[14.474769] (-) TimerEvent: {}
+[14.575177] (-) TimerEvent: {}
+[14.675956] (-) TimerEvent: {}
+[14.778431] (-) TimerEvent: {}
+[14.878907] (-) TimerEvent: {}
+[14.979458] (-) TimerEvent: {}
+[15.079782] (-) TimerEvent: {}
+[15.180323] (-) TimerEvent: {}
+[15.280655] (-) TimerEvent: {}
+[15.380978] (-) TimerEvent: {}
+[15.481281] (-) TimerEvent: {}
+[15.581598] (-) TimerEvent: {}
+[15.681913] (-) TimerEvent: {}
+[15.782254] (-) TimerEvent: {}
+[15.882589] (-) TimerEvent: {}
+[15.982906] (-) TimerEvent: {}
+[16.083252] (-) TimerEvent: {}
+[16.183587] (-) TimerEvent: {}
+[16.283905] (-) TimerEvent: {}
+[16.384227] (-) TimerEvent: {}
+[16.484547] (-) TimerEvent: {}
+[16.584861] (-) TimerEvent: {}
+[16.685187] (-) TimerEvent: {}
+[16.785507] (-) TimerEvent: {}
+[16.885821] (-) TimerEvent: {}
+[16.986132] (-) TimerEvent: {}
+[17.088278] (-) TimerEvent: {}
+[17.188805] (-) TimerEvent: {}
+[17.289270] (-) TimerEvent: {}
+[17.389830] (-) TimerEvent: {}
+[17.490180] (-) TimerEvent: {}
+[17.590527] (-) TimerEvent: {}
+[17.690845] (-) TimerEvent: {}
+[17.791379] (-) TimerEvent: {}
+[17.891702] (-) TimerEvent: {}
+[17.993481] (-) TimerEvent: {}
+[18.093946] (-) TimerEvent: {}
+[18.194282] (-) TimerEvent: {}
+[18.294611] (-) TimerEvent: {}
+[18.394929] (-) TimerEvent: {}
+[18.495271] (-) TimerEvent: {}
+[18.595620] (-) TimerEvent: {}
+[18.696100] (-) TimerEvent: {}
+[18.796507] (-) TimerEvent: {}
+[18.896845] (-) TimerEvent: {}
+[18.997538] (-) TimerEvent: {}
+[19.098096] (-) TimerEvent: {}
+[19.198463] (-) TimerEvent: {}
+[19.298824] (-) TimerEvent: {}
+[19.399233] (-) TimerEvent: {}
+[19.499582] (-) TimerEvent: {}
+[19.600025] (-) TimerEvent: {}
+[19.700547] (-) TimerEvent: {}
+[19.801106] (-) TimerEvent: {}
+[19.901888] (-) TimerEvent: {}
+[20.002535] (-) TimerEvent: {}
+[20.103235] (-) TimerEvent: {}
+[20.146637] (dolly_follow) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dolly_follow\x1b[0m\n'}
+[20.203349] (-) TimerEvent: {}
+[20.303783] (-) TimerEvent: {}
+[20.404472] (-) TimerEvent: {}
+[20.504927] (-) TimerEvent: {}
+[20.605692] (-) TimerEvent: {}
+[20.706091] (-) TimerEvent: {}
+[20.806673] (-) TimerEvent: {}
+[20.907409] (-) TimerEvent: {}
+[21.007840] (-) TimerEvent: {}
+[21.108248] (-) TimerEvent: {}
+[21.208636] (-) TimerEvent: {}
+[21.309158] (-) TimerEvent: {}
+[21.409650] (-) TimerEvent: {}
+[21.510397] (-) TimerEvent: {}
+[21.610910] (-) TimerEvent: {}
+[21.711459] (-) TimerEvent: {}
+[21.812262] (-) TimerEvent: {}
+[21.912614] (-) TimerEvent: {}
+[22.012969] (-) TimerEvent: {}
+[22.020204] (dolly_follow) StdoutLine: {'line': b'[100%] Built target dolly_follow\n'}
+[22.031059] (dolly_follow) CommandEnded: {'returncode': 0}
+[22.082886] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'install'}
+[22.091791] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_follow'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.113075] (-) TimerEvent: {}
+[22.113429] (dolly_follow) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.130290] (dolly_follow) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.131675] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/lib/dolly_follow/dolly_follow\n'}
+[22.143341] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/ament_index/resource_index/package_run_dependencies/dolly_follow\n'}
+[22.152779] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/ament_index/resource_index/parent_prefix_path/dolly_follow\n'}
+[22.161838] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.sh\n'}
+[22.172226] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.dsv\n'}
+[22.180673] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/environment/path.sh\n'}
+[22.189404] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/environment/path.dsv\n'}
+[22.198922] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/local_setup.bash\n'}
+[22.207460] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/local_setup.sh\n'}
+[22.213212] (-) TimerEvent: {}
+[22.217058] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/local_setup.zsh\n'}
+[22.226357] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/local_setup.dsv\n'}
+[22.238453] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/package.dsv\n'}
+[22.247177] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/ament_index/resource_index/packages/dolly_follow\n'}
+[22.257403] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig.cmake\n'}
+[22.267184] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig-version.cmake\n'}
+[22.277082] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow/share/dolly_follow/package.xml\n'}
+[22.287538] (dolly_follow) CommandEnded: {'returncode': 0}
+[22.313309] (-) TimerEvent: {}
+[22.413722] (-) TimerEvent: {}
+[22.514405] (-) TimerEvent: {}
+[22.615643] (-) TimerEvent: {}
+[22.662080] (dolly_follow) JobEnded: {'identifier': 'dolly_follow', 'rc': 0}
+[22.663335] (dolly_ignition) JobStarted: {'identifier': 'dolly_ignition'}
+[22.699784] (dolly_gazebo) JobStarted: {'identifier': 'dolly_gazebo'}
+[22.715748] (-) TimerEvent: {}
+[22.816216] (-) TimerEvent: {}
+[22.836109] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'cmake'}
+[22.836191] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '/home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly_ignition', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_ignition'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_ignition', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_ignition'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[22.839355] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'cmake'}
+[22.839442] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[22.916492] (-) TimerEvent: {}
+[23.016912] (-) TimerEvent: {}
+[23.117329] (-) TimerEvent: {}
+[23.218036] (-) TimerEvent: {}
+[23.318787] (-) TimerEvent: {}
+[23.419685] (-) TimerEvent: {}
+[23.520169] (-) TimerEvent: {}
+[23.596475] (dolly_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[23.597029] (dolly_ignition) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[23.620268] (-) TimerEvent: {}
+[23.720603] (-) TimerEvent: {}
+[23.763605] (dolly_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[23.767005] (dolly_ignition) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[23.820725] (-) TimerEvent: {}
+[23.904843] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[23.905064] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[23.920845] (-) TimerEvent: {}
+[24.021175] (-) TimerEvent: {}
+[24.110529] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[24.118421] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[24.118927] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[24.119578] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[24.121323] (-) TimerEvent: {}
+[24.124692] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[24.128589] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[24.133745] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[24.134416] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[24.135884] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[24.138737] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[24.221462] (-) TimerEvent: {}
+[24.272665] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[24.272911] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[24.279997] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[24.280655] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[24.282193] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[24.282798] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[24.284130] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[24.284228] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[24.321583] (-) TimerEvent: {}
+[24.421935] (-) TimerEvent: {}
+[24.466195] (dolly_gazebo) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[24.466727] (dolly_gazebo) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[24.466935] (dolly_gazebo) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[24.467089] (dolly_gazebo) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[24.467230] (dolly_gazebo) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[24.467709] (dolly_gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[24.467846] (dolly_gazebo) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[24.467973] (dolly_gazebo) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[24.468097] (dolly_gazebo) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[24.468218] (dolly_gazebo) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[24.468339] (dolly_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[24.468535] (dolly_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[24.504161] (dolly_ignition) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:16 (message):\n'}
+[24.504458] (dolly_ignition) StderrLine: {'line': b'  Ignition Gazebo 5 or 6 not found, proceeding without that simulator.\n'}
+[24.504580] (dolly_ignition) StderrLine: {'line': b'\n'}
+[24.504899] (dolly_ignition) StderrLine: {'line': b'\x1b[0m\n'}
+[24.505038] (dolly_ignition) StdoutLine: {'line': b'-- Configuring done\n'}
+[24.511121] (dolly_ignition) StdoutLine: {'line': b'-- Generating done\n'}
+[24.511482] (dolly_ignition) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[24.511598] (dolly_ignition) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[24.511688] (dolly_ignition) StderrLine: {'line': b'\n'}
+[24.511773] (dolly_ignition) StderrLine: {'line': b'    AMENT_CMAKE_SYMLINK_INSTALL\n'}
+[24.511855] (dolly_ignition) StderrLine: {'line': b'\n'}
+[24.512039] (dolly_ignition) StderrLine: {'line': b'\x1b[0m\n'}
+[24.512132] (dolly_ignition) StdoutLine: {'line': b'-- Build files have been written to: /home/levin/ROS2_WS/Wheeled_robot/build/dolly_ignition\n'}
+[24.518204] (dolly_ignition) CommandEnded: {'returncode': 0}
+[24.518634] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'build'}
+[24.518667] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_ignition', '--', '-j2', '-l2'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_ignition', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_ignition'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[24.524796] (-) TimerEvent: {}
+[24.526346] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[24.577370] (dolly_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[24.593787] (dolly_ignition) CommandEnded: {'returncode': 0}
+[24.624907] (-) TimerEvent: {}
+[24.680484] (dolly_ignition) JobEnded: {'identifier': 'dolly_ignition', 'rc': 0}
+[24.681350] (dolly_tests) JobStarted: {'identifier': 'dolly_tests'}
+[24.693210] (dolly_tests) JobProgress: {'identifier': 'dolly_tests', 'progress': 'cmake'}
+[24.694153] (dolly_tests) Command: {'cmd': ['/usr/bin/cmake', '/home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly_tests', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly_tests'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[24.725038] (-) TimerEvent: {}
+[24.785907] (dolly_tests) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[24.825168] (-) TimerEvent: {}
+[24.854400] (dolly_tests) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[24.862480] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[24.925301] (-) TimerEvent: {}
+[24.941721] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[24.952941] (dolly_tests) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[24.953181] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[24.953266] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[24.954446] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[25.025407] (-) TimerEvent: {}
+[25.052235] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[25.062712] (dolly_tests) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[25.064195] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[25.065927] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[25.082292] (dolly_tests) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:18 (message):\n'}
+[25.082627] (dolly_tests) StderrLine: {'line': b'  Ignition Gazebo 5 or 6 not found, proceeding without that simulator.\n'}
+[25.082754] (dolly_tests) StderrLine: {'line': b'\n'}
+[25.082906] (dolly_tests) StderrLine: {'line': b'\x1b[0m\n'}
+[25.083150] (dolly_tests) StdoutLine: {'line': b'-- Configuring done\n'}
+[25.084746] (dolly_tests) StdoutLine: {'line': b'-- Generating done\n'}
+[25.085297] (dolly_tests) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[25.085454] (dolly_tests) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[25.085572] (dolly_tests) StderrLine: {'line': b'\n'}
+[25.085692] (dolly_tests) StderrLine: {'line': b'    AMENT_CMAKE_SYMLINK_INSTALL\n'}
+[25.085801] (dolly_tests) StderrLine: {'line': b'\n'}
+[25.085924] (dolly_tests) StderrLine: {'line': b'\x1b[0m\n'}
+[25.086418] (dolly_tests) StdoutLine: {'line': b'-- Build files have been written to: /home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests\n'}
+[25.090916] (dolly_tests) CommandEnded: {'returncode': 0}
+[25.091320] (dolly_tests) JobProgress: {'identifier': 'dolly_tests', 'progress': 'build'}
+[25.091351] (dolly_tests) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests', '--', '-j2', '-l2'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_tests'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[25.125517] (-) TimerEvent: {}
+[25.132237] (dolly_tests) CommandEnded: {'returncode': 0}
+[25.189622] (dolly_tests) JobEnded: {'identifier': 'dolly_tests', 'rc': 0}
+[25.225665] (-) TimerEvent: {}
+[25.226221] (dolly_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[25.289214] (dolly_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[25.325776] (-) TimerEvent: {}
+[25.426221] (-) TimerEvent: {}
+[25.526711] (-) TimerEvent: {}
+[25.529087] (dolly_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[25.626822] (-) TimerEvent: {}
+[25.728047] (-) TimerEvent: {}
+[25.828356] (-) TimerEvent: {}
+[25.901663] (dolly_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[25.928502] (-) TimerEvent: {}
+[26.028926] (-) TimerEvent: {}
+[26.121165] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[26.129127] (-) TimerEvent: {}
+[26.190905] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[26.229317] (-) TimerEvent: {}
+[26.299652] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[26.313932] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[26.314696] (dolly_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[26.319728] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[26.330863] (-) TimerEvent: {}
+[26.332240] (dolly_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[26.384176] (dolly_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[26.398052] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[26.409567] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[26.418726] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[26.419444] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[26.428057] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[26.428731] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[26.430941] (-) TimerEvent: {}
+[26.436226] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[26.436990] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[26.443668] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[26.444348] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[26.450372] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[26.451297] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[26.459169] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[26.531083] (-) TimerEvent: {}
+[26.631452] (-) TimerEvent: {}
+[26.675345] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[26.693108] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[26.693714] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[26.726783] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[26.731554] (-) TimerEvent: {}
+[26.748702] (dolly_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[26.754263] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[26.831725] (-) TimerEvent: {}
+[26.876907] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[26.916554] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[26.923542] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[26.931844] (-) TimerEvent: {}
+[26.947477] (dolly_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[26.989285] (dolly_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[27.011474] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[27.012498] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[27.031966] (-) TimerEvent: {}
+[27.032432] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[27.038127] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[27.055633] (dolly_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[27.109961] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[27.132071] (-) TimerEvent: {}
+[27.133654] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[27.134251] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[27.149367] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[27.150583] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[27.152412] (dolly_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[27.168271] (dolly_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[27.169068] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[27.171088] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[27.171666] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[27.172077] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[27.187008] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[27.187518] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[27.232213] (-) TimerEvent: {}
+[27.317416] (dolly_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[27.332326] (-) TimerEvent: {}
+[27.369418] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[27.381887] (dolly_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[27.410924] (dolly_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[27.432431] (-) TimerEvent: {}
+[27.504256] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[27.531433] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[27.532507] (-) TimerEvent: {}
+[27.571100] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[27.571922] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[27.572630] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[27.573287] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[27.632720] (-) TimerEvent: {}
+[27.649443] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[27.732836] (-) TimerEvent: {}
+[27.833363] (-) TimerEvent: {}
+[27.933694] (-) TimerEvent: {}
+[28.016987] (dolly_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[28.033797] (-) TimerEvent: {}
+[28.134147] (-) TimerEvent: {}
+[28.234564] (-) TimerEvent: {}
+[28.335054] (-) TimerEvent: {}
+[28.435404] (-) TimerEvent: {}
+[28.504855] (dolly_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[28.535520] (-) TimerEvent: {}
+[28.570536] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[28.635634] (-) TimerEvent: {}
+[28.736403] (-) TimerEvent: {}
+[28.837147] (-) TimerEvent: {}
+[28.937594] (-) TimerEvent: {}
+[28.950234] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[28.962250] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[28.967916] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[28.970153] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[28.977826] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[28.982642] (dolly_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[28.990010] (dolly_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[28.993047] (dolly_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo\n'}
+[29.008626] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[29.009462] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'build'}
+[29.010565] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo', '--', '-j2', '-l2'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[29.037713] (-) TimerEvent: {}
+[29.050839] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[29.075328] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'install'}
+[29.076396] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[29.084435] (dolly_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.085538] (dolly_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.087303] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//launch/dolly.launch.py\n'}
+[29.097908] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/brown_eye.png\n'}
+[29.107409] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/casual_female.png\n'}
+[29.116020] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyebrow002.png\n'}
+[29.124347] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyelashes01.png\n'}
+[29.132896] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[29.137847] (-) TimerEvent: {}
+[29.141209] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_normal.png\n'}
+[29.149813] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[29.158378] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_normal.png\n'}
+[29.169067] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/ponytail01_diffuse.png\n'}
+[29.177975] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/shoes05_diffuse.png\n'}
+[29.186792] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/tongue01_diffuse.png\n'}
+[29.195536] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[29.203947] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes/casual_female.dae\n'}
+[29.212465] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.config\n'}
+[29.222931] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.sdf\n'}
+[29.231639] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/1.png\n'}
+[29.237982] (-) TimerEvent: {}
+[29.240016] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/2.png\n'}
+[29.248927] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/3.png\n'}
+[29.257434] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/4.png\n'}
+[29.269086] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/5.png\n'}
+[29.277745] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain (original).jpg\n'}
+[29.286443] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain.jpg\n'}
+[29.295203] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/forest.jpg\n'}
+[29.304395] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.config\n'}
+[29.312469] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.sdf\n'}
+[29.321915] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts/script.material\n'}
+[29.330706] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures/sheep.jpg\n'}
+[29.338106] (-) TimerEvent: {}
+[29.339302] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.config\n'}
+[29.347758] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.sdf\n'}
+[29.356250] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.frag\n'}
+[29.365730] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.vert\n'}
+[29.375625] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts/ocean.material\n'}
+[29.384412] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/License and source soil_sand_0045_01.txt\n'}
+[29.393429] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds.jpg\n'}
+[29.402228] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_bk.jpg\n'}
+[29.411025] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_dn.jpg\n'}
+[29.420113] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_fr.jpg\n'}
+[29.429039] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_lf.jpg\n'}
+[29.437711] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_rt.jpg\n'}
+[29.438175] (-) TimerEvent: {}
+[29.446575] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_up.jpg\n'}
+[29.455045] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/normals.dds\n'}
+[29.467338] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/soil_sand_0045_01.jpg\n'}
+[29.475941] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh-simple.dae\n'}
+[29.486681] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.blend\n'}
+[29.494105] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.dae\n'}
+[29.504353] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh_below.dae\n'}
+[29.521635] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.config\n'}
+[29.528559] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.sdf\n'}
+[29.537715] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//rviz/dolly_gazebo.rviz\n'}
+[29.538255] (-) TimerEvent: {}
+[29.547002] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_city.world\n'}
+[29.555458] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_empty.world\n'}
+[29.570174] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.sh\n'}
+[29.578929] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.dsv\n'}
+[29.588687] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/ament_index/resource_index/package_run_dependencies/dolly_gazebo\n'}
+[29.597628] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/ament_index/resource_index/parent_prefix_path/dolly_gazebo\n'}
+[29.606014] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.sh\n'}
+[29.614914] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.dsv\n'}
+[29.623400] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/environment/path.sh\n'}
+[29.632336] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/environment/path.dsv\n'}
+[29.638386] (-) TimerEvent: {}
+[29.640935] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/local_setup.bash\n'}
+[29.649634] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/local_setup.sh\n'}
+[29.658330] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/local_setup.zsh\n'}
+[29.668344] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/local_setup.dsv\n'}
+[29.676958] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/package.dsv\n'}
+[29.686141] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/ament_index/resource_index/packages/dolly_gazebo\n'}
+[29.695338] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig.cmake\n'}
+[29.703746] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig-version.cmake\n'}
+[29.712508] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/package.xml\n'}
+[29.722871] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[29.739172] (-) TimerEvent: {}
+[29.772787] (dolly_gazebo) JobEnded: {'identifier': 'dolly_gazebo', 'rc': 0}
+[29.773859] (dolly) JobStarted: {'identifier': 'dolly'}
+[29.783655] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'cmake'}
+[29.784025] (dolly) Command: {'cmd': ['/usr/bin/cmake', '/home/levin/ROS2_WS/Wheeled_robot/src/dolly/dolly', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/dolly'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo:/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo:/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[29.839294] (-) TimerEvent: {}
+[29.858560] (dolly) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[29.931781] (dolly) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[29.939397] (-) TimerEvent: {}
+[29.941336] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[30.038863] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[30.039461] (-) TimerEvent: {}
+[30.052397] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[30.052622] (dolly) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[30.053082] (dolly) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[30.058647] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[30.139584] (-) TimerEvent: {}
+[30.162106] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[30.175081] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[30.175340] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[30.175891] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[30.179631] (dolly) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[30.239675] (-) TimerEvent: {}
+[30.340110] (-) TimerEvent: {}
+[30.398394] (dolly) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[30.440229] (-) TimerEvent: {}
+[30.485872] (dolly) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[30.513946] (dolly) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[30.540340] (-) TimerEvent: {}
+[30.636742] (dolly) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[30.638230] (dolly) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[30.639262] (dolly) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[30.640409] (-) TimerEvent: {}
+[30.643290] (dolly) StdoutLine: {'line': b'-- Configuring done\n'}
+[30.646648] (dolly) StdoutLine: {'line': b'-- Generating done\n'}
+[30.647720] (dolly) StdoutLine: {'line': b'-- Build files have been written to: /home/levin/ROS2_WS/Wheeled_robot/build/dolly\n'}
+[30.655084] (dolly) CommandEnded: {'returncode': 0}
+[30.655560] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'build'}
+[30.655593] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly', '--', '-j2', '-l2'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo:/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo:/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[30.706402] (dolly) CommandEnded: {'returncode': 0}
+[30.732485] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'install'}
+[30.733299] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly'], 'cwd': '/home/levin/ROS2_WS/Wheeled_robot/build/dolly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'levin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/levin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'levin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'levin'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/levin-All-Series:@/tmp/.ICE-unix/1212,unix/levin-All-Series:/tmp/.ICE-unix/1212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a59452a4_f05b_4f09_bad9_207904cbcfb4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RMG611'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.720'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo:/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/levin/ROS2_WS/Wheeled_robot/build/dolly'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=50a05359ef625531ed3c117e641a8381'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/levin/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/levin/ROS2_WS/Wheeled_robot/install/dolly_gazebo:/home/levin/ROS2_WS/Wheeled_robot/install/dolly_follow:/opt/ros/humble')]), 'shell': False}
+[30.742542] (-) TimerEvent: {}
+[30.746499] (dolly) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.748109] (dolly) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.748201] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly\n'}
+[30.758274] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly\n'}
+[30.771599] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/ament_prefix_path.sh\n'}
+[30.788108] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/ament_prefix_path.dsv\n'}
+[30.798186] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/path.sh\n'}
+[30.808595] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/environment/path.dsv\n'}
+[30.818429] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.bash\n'}
+[30.828886] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.sh\n'}
+[30.837749] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.zsh\n'}
+[30.842654] (-) TimerEvent: {}
+[30.850443] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/local_setup.dsv\n'}
+[30.858017] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/package.dsv\n'}
+[30.868117] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/ament_index/resource_index/packages/dolly\n'}
+[30.878569] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/cmake/dollyConfig.cmake\n'}
+[30.894180] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/cmake/dollyConfig-version.cmake\n'}
+[30.897020] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/levin/ROS2_WS/Wheeled_robot/install/dolly/share/dolly/package.xml\n'}
+[30.914600] (dolly) CommandEnded: {'returncode': 0}
+[30.942747] (-) TimerEvent: {}
+[30.962147] (dolly) JobEnded: {'identifier': 'dolly', 'rc': 0}
+[30.963096] (-) EventReactorShutdown: {}
