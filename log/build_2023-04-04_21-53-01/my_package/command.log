@@ -1,0 +1,2 @@
+Invoking command in '/home/levin/ROS2_WS/Wheeled_robot/build/my_package': /usr/bin/cmake /home/levin/ROS2_WS/Wheeled_robot/src/my_package -DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/my_package
+Invoked command in '/home/levin/ROS2_WS/Wheeled_robot/build/my_package' returned '1': /usr/bin/cmake /home/levin/ROS2_WS/Wheeled_robot/src/my_package -DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/Wheeled_robot/install/my_package
