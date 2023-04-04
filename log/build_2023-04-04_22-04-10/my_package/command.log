@@ -1,0 +1,6 @@
+Invoking command in '/home/levin/ROS2_WS/wheeled_robot/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/levin/ROS2_WS/wheeled_robot/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/wheeled_robot/install/my_package
+Invoked command in '/home/levin/ROS2_WS/wheeled_robot/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/levin/ROS2_WS/wheeled_robot/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/levin/ROS2_WS/wheeled_robot/install/my_package
+Invoking command in '/home/levin/ROS2_WS/wheeled_robot/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/levin/ROS2_WS/wheeled_robot/build/my_package -- -j2 -l2
+Invoked command in '/home/levin/ROS2_WS/wheeled_robot/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/levin/ROS2_WS/wheeled_robot/build/my_package -- -j2 -l2
+Invoking command in '/home/levin/ROS2_WS/wheeled_robot/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/levin/ROS2_WS/wheeled_robot/build/my_package
+Invoked command in '/home/levin/ROS2_WS/wheeled_robot/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/levin/ROS2_WS/wheeled_robot/build/my_package
